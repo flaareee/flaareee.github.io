@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Найвідоміші музеї світу</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -76,7 +75,6 @@
 </header>
 
 <main>
-    <!-- Слайдер -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -120,11 +118,10 @@
             <!-- додайте інші картинки за бажанням -->
         </div>
     </section>
-
-    <!-- Новини -->
+    
     <section id="news" class="news-section">
         <h2>Новини</h2>
-        <!-- Новина 1 -->
+       
         <article>
             <h3>Відкриття нової виставки у Луврі</h3>
             <p>Музей Лувр у Парижі анонсував відкриття нової виставки "Скарби світового мистецтва", яка презентує вражаючу колекцію картин, скульптур і реліквій з усього світу. Виставка буде відкрита для відвідувачів з 1 червня.</p>
@@ -135,33 +132,33 @@
                 <!-- додайте інші фото за бажанням -->
             </div>
         </article>
-        <!-- Новина 2 -->
+       
         <article>
             <h3>Музей Метрополітен: скарби світового мистецтва</h3>
             <p>У музеї Метрополітен можна знайти практично все: від артефактів палеоліту до предметів поп- арту. Є тут і колекції мистецтва Африки і Океанії, Близького Сходу і Єгипту, які сміливо можна назвати раритетом...</p>
-            <!-- фото -->
+          
             <div class="photos">
                 <img src="images/metropolitan2.jpg" alt="Музей Метрополітен">
                 <img src="images/metropolitan3.jpg" alt="Музей Метрополітен">
                 <!-- додайте інші фото за бажанням -->
             </div>
         </article>
-        <!-- Новина 3 -->
+        
         <article>
             <h3>Музей Ватикану: найбільший музей світу</h3>
             <p>Музей Ватикану — найбільший музей світу: 1400 залів, 50000 об’єктів, і щоб обійти всі представлені експонати треба пройти 7 км. Зрозуміло, всі відвідувачі першою справою прагнуть потрапити в Сикстинську капелу...</p>
-            <!-- фото -->
+           
             <div class="photos">
                 <img src="images/vatican2.jpg" alt="Музей Ватикану">
                 <img src="images/vatican3.jpg" alt="Музей Ватикану">
                 <!-- додайте інші фото за бажанням -->
             </div>
         </article>
-        <!-- інші новини -->
+      
         <article>
             <h3>British Museum: культурне скарбниця Великої Британії</h3>
             <p>British Museum — Британський музей в Лондоні — є одним з найбільших та найстаріших музеїв у світі. Заснований в 1753 році, він має в своєму зібранні понад 8 мільйонів артефактів, які охоплюють всю історію людства з давніх часів до сучасності.</p>
-            <!-- фото -->
+            
             <div class="photos">
                 <img src="images/britishmuseum1.jpg" alt="British Museum">
                 <img src="images/britishmuseum2.jpg" alt="British Museum">
@@ -171,7 +168,7 @@
         <article>
             <h3>Національний музей Китаю: культурна спадщина Піднебесної</h3>
             <p>Національний музей Китаю в Пекіні є найбільшим музеєм в країні та одним з найбільших у світі. Він містить понад мільйон об’єктів, що охоплюють історію Китаю від давнини до сучасності.</p>
-            <!-- фото -->
+           
             <div class="photos">
                 <img src="images/nationalmuseumchina1.jpg" alt="Національний музей Китаю">
                 <img src="images/nationalmuseumchina2.jpg" alt="Національний музей Китаю">
@@ -180,17 +177,17 @@
         </article>
     </section>
 
-    <!-- Контакти -->
+    
     <section id="contacts">
         <h2>Контакти</h2>
         <p>Для отримання додаткової інформації, будь ласка, зв'яжіться з нами:</p>
         <p>Email: info@worldmuseums.com</p>
         <p>Телефон: +123 456 7890</p>
-        <!-- Карта Google -->
+        
         <div id="map" style="height: 400px; width: 100%;"></div>
         <script>
             function initMap() {
-                var location = { lat: 48.858844, lng: 2.294351 }; // Замість цього введіть ваші координати
+                var location = { lat: 48.858844, lng: 2.294351 }; 
                 var map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 10,
                     center: location
